@@ -6,11 +6,11 @@ public class CalculadorDeImpostos {
 
 		if ("ICMS".equals(imposto)) {
 
-			double icms = orcamento.getValor() * 0.1;
+			double icms = new ICMS().calculaICMS(orcamento);
 			System.out.println(icms);
 		} else if ("ISS".equals(imposto)) {
 			
-			double iss = orcamento.getValor() * 0.06;
+			double iss = new ISS().calculaISS(orcamento);
 			System.out.println(iss);
 		}
 	}
