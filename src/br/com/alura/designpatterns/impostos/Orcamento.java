@@ -13,6 +13,11 @@ public class Orcamento {
 		this.itens = new ArrayList<>();
 	}
 	
+	public Orcamento(double valor) {
+		this.valor = valor;
+		this.itens = new ArrayList<>();
+	}
+	
 	public double getValor() {
 		return valor;
 	}
