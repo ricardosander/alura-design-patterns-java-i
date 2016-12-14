@@ -11,9 +11,9 @@ public class CalculadorDeDescontos {
 		DescontoCombinacaoItem d3 = new DescontoCombinacaoItem();
 		SemDesconto semDesconto = new SemDesconto();
 		
-		d1.setDesconto(d2);
-		d2.setDesconto(d3);
-		d3.setDesconto(semDesconto);
+		d1.setProximo(d2);
+		d2.setProximo(d3);
+		d3.setProximo(semDesconto);
 		
 		return d1.desconto(orcamento);
 	}

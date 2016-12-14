@@ -14,7 +14,6 @@ public class DescontoCombinacaoItemTest {
 	public void maisDe5Itens() {
 		
 		Desconto desconto = new DescontoCombinacaoItem();
-		desconto.setDesconto(new SemDesconto());
 		
 		Orcamento orcamento = new Orcamento();
 		orcamento.adiciona(new Item("Item 1", 1));
@@ -31,7 +30,6 @@ public class DescontoCombinacaoItemTest {
 	public void valorMaisDe500() {
 		
 		Desconto desconto = new DescontoCombinacaoItem();
-		desconto.setDesconto(new SemDesconto());
 		
 		Orcamento orcamento = new Orcamento();
 		orcamento.adiciona(new Item("Item 1", 501));
@@ -42,7 +40,6 @@ public class DescontoCombinacaoItemTest {
 	public void semItens() {
 		
 		Desconto desconto = new DescontoCombinacaoItem();
-		desconto.setDesconto(new SemDesconto());
 		
 		Orcamento orcamento = new Orcamento();
 		assertEquals(0.0, desconto.desconto(orcamento), 0);
@@ -52,7 +49,6 @@ public class DescontoCombinacaoItemTest {
 	public void itensCombinados() {
 		
 		Desconto desconto = new DescontoCombinacaoItem();
-		desconto.setDesconto(new SemDesconto());
 		
 		Orcamento orcamento = new Orcamento();
 		orcamento.adiciona(new Item("caneta", 10));

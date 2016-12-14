@@ -48,7 +48,6 @@ public class SemDescontoTest {
 	public void itensCombinados() {
 		
 		Desconto desconto = new SemDesconto();
-		desconto.setDesconto(new SemDesconto());
 		
 		Orcamento orcamento = new Orcamento();
 		orcamento.adiciona(new Item("caneta", 10));

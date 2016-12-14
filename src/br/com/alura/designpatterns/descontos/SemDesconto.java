@@ -2,14 +2,15 @@ package br.com.alura.designpatterns.descontos;
 
 import br.com.alura.designpatterns.impostos.Orcamento;
 
-public class SemDesconto implements Desconto {
+public class SemDesconto extends Desconto {
 
-	@Override
-	public double desconto(Orcamento orcamento) {
+	public double calcula(Orcamento orcamento) {
 		return 0;
 	}
 
 	@Override
-	public void setDesconto(Desconto desconto) {}
+	protected boolean aplica(Orcamento orcamento) {
+		return true;
+	}
 
 }
