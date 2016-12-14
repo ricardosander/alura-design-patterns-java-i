@@ -6,7 +6,7 @@ public abstract class Desconto {
 
 	private Desconto proximo;
 
-	public double desconto(Orcamento orcamento) {
+	public final double desconto(Orcamento orcamento) {
 		
 		if (this.aplica(orcamento)) {
 			return this.calcula(orcamento);
